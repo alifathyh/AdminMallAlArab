@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/category_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:src="@drawable/ic_baseline_add_photo_alternate"
+                android:scaleType="centerCrop"
+                android:background="@color/colorPrimary"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/details_et_category_hint"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jazera"
+                    android:textSize="@dimen/input_text_size"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/category_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/buton_top_margen"
+                android:text="@string/category_btn_save_text"
+                android:textSize="@dimen/buton_text_size"
+                app:cornerRadius="@dimen/buton_corner_reduis"
+                android:fontFamily="@font/jazera"
+                android:padding="@dimen/buton_padding"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الادمن</string>
+    <string name="action_sign_out">تسجيل خروج</string>
+
+    <string name="rest_pass">تم إرسال بريد إلكتروني إلى بريدك ، قم بتنشيط حسابك</string>
+
+    <string-array name="quantity">
+        <item>قطعة</item>
+        <item>كيلو جرام</item>
+    </string-array>
+
+    <string-array name="the_condition">
+        <item>متوفر</item>
+        <item>غير متوفر</item>
+    </string-array>
+
+    <!-- Login and register -->
+
+    <string name="login_title">مول العرب</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="email_hint">البريد الالكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="skip">تخطي</string>
+    <string name="signup_hint">لا تمتلك حساب؟ انشاء حساب جديد</string>
+    <string name="forget_hint">نسيت كلمة المرور؟</string>
+    <string name="name_hint">الاسم</string>
+    <string name="phone_hint">رقم الهاتف</string>
+    <string name="register">تسجيل جديد</string>
+    <string name="login_hint">هل تمتلك حساب؟ تسجيل دخول</string>
+    <string name="forget_send_to_email">ارسال الى البريد الالكتروني</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+
+    <!-- details category activity -->
+    <string name="details_et_category_hint">التصنيفات</string>
+    <string name="category_btn_save_text">حفظ</string>
+
+    <!-- details item activity -->
+
+    <string name="details_et_item_name_hint">الاسم</string>
+    <string name="details_et_item_description_hint">الوصف</string>
+    <string name="details_et_item_price_hint">السعر</string>
+    <string name="item_btn_save_text">حفظ</string>
+    <string name="details_et_item_category_hint">التصنيف</string>
+
+    <!-- main activity -->
+
+    <string name="main_tv_add_products">اضافة منتجات</string>
+    <string name="main_tv_Products">المنتجات</string>
+    <string name="main_tv_add_categories">اضافة تصنيفات</string>
+    <string name="main_tv_categories">التصنيفات</string>
+    <string name="main_tv_order_list">قائمة الطلبات</string>
+
+    <!-- order details activity -->
+    <string name="order_details_btn_confirm_Order">الموافقة على الطلب</string>
+    <string name="total">المبلغ</string>
+    <string name="Status">حالة الطلب</string>
+    <string name="view">عرض الطلبية</string>
+
+    <string name="location">الموقع: </string>
+    <string name="name">"الاسم: "</string>
+    <string name="Phone">"رقم الهاتف: "</string>
+
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="order_list">قائمة الطلبات</string>
+    <string name="item">المنتجات</string>
+    <string name="add_item">اضافة منتجات</string>
+    <string name="category">تصنيفات</string>
+    <string name="add_category">اضافة تصنيف</string>
+    <string name="Main">لوحة التحكم</string>
+
+
+
+
+</resources>

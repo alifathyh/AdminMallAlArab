@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adminarabmall">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminArabMall">
+        <activity android:name=".orderlist.OrderDetails" android:label="@string/order_details"></activity>
+        <activity android:name=".orderlist.OrderList" android:label="@string/order_list"/>
+        <activity android:name=".item.DisplayItem" android:label="@string/item" />
+        <activity android:name=".item.AddItem" android:label="@string/add_item"
+            android:theme="@style/NoActionBar"
+            />
+        <activity android:name=".category.DisplayCategories" android:label="@string/category"/>
+        <activity android:name=".category.AddCategories" android:label="@string/add_category"/>
+        <activity android:name=".MainActivity" android:label="@string/Main"/>
+        <activity android:name=".user.LoginActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user.ForgetPasswordActivity"
+            android:theme="@style/NoActionBar"/>
+        <activity android:name=".user.RegisterActivity"
+            android:theme="@style/NoActionBar"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string name="action_sign_out">Sign Out</string>
+
+    <string name="rest_pass">An email has been sent to your mail, activate your account</string>
+
+    <!-- Login and register -->
+
+    <string-array name="quantity">
+        <item>piece</item>
+        <item>Kg</item>
+    </string-array>
+
+    <string-array name="the_condition">
+        <item>Available</item>
+        <item>Not available</item>
+    </string-array>
+
+    <string name="login_title">Arab Mall</string>
+    <string name="login">LOGIN</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="skip">Skip</string>
+    <string name="signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="forget_hint">Forget Password ?</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Mobile Number</string>
+    <string name="register">REGISTER</string>
+    <string name="login_hint">Already have an account? Sign In</string>
+    <string name="forget_send_to_email">Send To Email</string>
+    <string name="forget_password">Forget Password</string>
+
+    <!-- details category activity -->
+    <string name="details_et_category_hint">Category</string>
+    <string name="category_btn_save_text">save</string>
+
+    <!-- details item activity -->
+
+    <string name="details_et_item_name_hint">Name</string>
+    <string name="details_et_item_description_hint">description</string>
+    <string name="details_et_item_price_hint">Price</string>
+    <string name="item_btn_save_text">save</string>
+    <string name="details_et_item_category_hint">category</string>
+
+    <!-- main activity -->
+
+    <string name="main_tv_add_products">add products</string>
+    <string name="main_tv_Products">Products</string>
+    <string name="main_tv_add_categories">add categories</string>
+    <string name="main_tv_categories">categories</string>
+    <string name="main_tv_order_list">order list</string>
+
+    <!-- order details activity -->
+
+    <string name="order_details_btn_confirm_Order">confirm Order</string>
+    <string name="total">The amount</string>
+    <string name="Status">Order status</string>
+    <string name="view">View order</string>
+    <string name="location">Location: </string>
+    <string name="name">Name: </string>
+    <string name="Phone">Phone: </string>
+    <string name="order_details">Order Details</string>
+    <string name="order_list">Order List</string>
+    <string name="item">Items</string>
+    <string name="add_item">Add Items</string>
+    <string name="category">Category</string>
+    <string name="add_category">Add Categories</string>
+    <string name="Main">Control Board</string>
+
+
+    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+<!--    <string name="item_btn_delete_text">delete</string>-->
+<!--    <string name="item_btn_edit_text">edit</string>-->
+<!--    <string name="title_activity_oreder_list">OrederList</string>-->
+<!--    &lt;!&ndash; Strings used for fragments for navigation &ndash;&gt;-->
+<!--    <string name="first_fragment_label">First Fragment</string>-->
+<!--    <string name="second_fragment_label">Second Fragment</string>-->
+<!--    <string name="next">Next</string>-->
+<!--    <string name="previous">Previous</string>-->
+
+<!--    <string name="hello_first_fragment">Hello first fragment</string>-->
+<!--    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>-->
+
+</resources>

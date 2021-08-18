@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="loginViewsMargin">16dp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="about_us_text_size">25sp</dimen>
+    <dimen name="web_view_ttext_size">16dp</dimen>
+
+
+
+    //*********************************************
+    <dimen name="margin_top">@dimen/_5sdp</dimen>
+    <dimen name="margin_sel_order">@dimen/_3sdp</dimen>
+    <dimen name="sub_title_text_size">@dimen/_18ssp</dimen>
+    <dimen name="input_text_corner_reduise">@dimen/_15sdp</dimen>
+    <dimen name="input_text_size">@dimen/_10ssp</dimen>
+    <dimen name="buton_top_margen">@dimen/_10sdp</dimen>
+    <dimen name="buton_text_size">@dimen/_12sdp</dimen>
+    <dimen name="buton_corner_reduis">@dimen/_16sdp</dimen>
+    <dimen name="buton_padding">@dimen/_4sdp</dimen>
+    <dimen name="login_text_size">@dimen/_12sdp</dimen>
+    <dimen name="main_title_margin_top">@dimen/_35sdp</dimen>
+    <dimen name="main_title_text_siza">@dimen/_30ssp</dimen>
+    <dimen name="card_margen">@dimen/_15sdp</dimen>
+    <dimen name="card_raduies">@dimen/_10sdp</dimen>
+    <dimen name="login_card_margen_top">@dimen/_30sdp</dimen>
+    <dimen name="buton_hieght">@dimen/_90sdp</dimen>
+    <dimen name="buton_width">@dimen/_120sdp</dimen>
+</resources>

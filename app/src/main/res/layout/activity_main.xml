@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:rowCount="3"
+    android:background="#EFEDED"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_btn_add_products"
+        android:layout_width="@dimen/buton_width"
+        android:layout_height="@dimen/buton_hieght"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="1"
+        android:padding="@dimen/buton_padding"
+        android:textSize="@dimen/buton_text_size"
+        app:cornerRadius="@dimen/buton_corner_reduis"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/add_products_img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_addproduct" />
+
+            <TextView
+                android:id="@+id/add_products_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/main_tv_add_products"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_btn_add_categories"
+        android:layout_width="@dimen/buton_width"
+        android:layout_height="@dimen/buton_hieght"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="1"
+        android:padding="@dimen/buton_padding"
+        android:textSize="@dimen/buton_text_size"
+        app:cornerRadius="@dimen/buton_corner_reduis"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/add_category_img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_category" />
+
+            <TextView
+                android:id="@+id/add_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/main_tv_add_categories"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_btn_order_list"
+        android:layout_width="@dimen/buton_width"
+        android:layout_height="@dimen/buton_hieght"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="1"
+        android:padding="@dimen/buton_padding"
+        android:textSize="@dimen/buton_text_size"
+        app:cornerRadius="@dimen/buton_corner_reduis"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_columnSpan="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/order_list_img"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_orderlist" />
+
+            <TextView
+                android:id="@+id/order_list_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="2"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/main_tv_order_list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_btn_products_list"
+        android:layout_width="@dimen/buton_width"
+        android:layout_height="@dimen/buton_hieght"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="1"
+        android:padding="@dimen/buton_padding"
+        android:textSize="@dimen/buton_text_size"
+        app:cornerRadius="@dimen/buton_corner_reduis"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/products_img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_products" />
+
+            <TextView
+                android:id="@+id/products_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/main_tv_Products"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_btn_categories_list"
+        android:layout_width="@dimen/buton_width"
+        android:layout_height="@dimen/buton_hieght"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margin_top"
+        android:layout_weight="1"
+        android:padding="@dimen/buton_padding"
+        android:textSize="@dimen/buton_text_size"
+        app:cornerRadius="@dimen/buton_corner_reduis"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/category_img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_category" />
+
+            <TextView
+                android:id="@+id/category_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/main_tv_categories"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>

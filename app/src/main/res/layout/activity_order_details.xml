@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDED"
+    android:orientation="vertical"
+    tools:context=".orderlist.OrderDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_shape"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_details_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/order_details_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/order_details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="3">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="@string/name"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="@string/location"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="@string/Phone"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/order_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:padding="@dimen/_3sdp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/order_details_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:padding="@dimen/_3sdp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/order_details_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sel_order"
+                android:fontFamily="@font/jazera"
+                android:padding="@dimen/_3sdp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_14ssp" />
+        </GridLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_details_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/margin_top"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_oeder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/jazera"
+            android:padding="@dimen/buton_padding"
+            android:text="@string/order_details_btn_confirm_Order"
+            android:textSize="@dimen/buton_text_size"
+            app:cornerRadius="@dimen/buton_corner_reduis"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/jazera"
+            android:text="@string/total"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_oeder"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/order_details_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/jazera"
+            android:text="TextView"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <Spinner
+            android:id="@+id/statusSp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/order_details_total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/order_details_total"
+            app:layout_constraintTop_toTopOf="@+id/order_details_total" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

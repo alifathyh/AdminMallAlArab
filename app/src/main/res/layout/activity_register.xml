@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.LoginActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/login_shape_bk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_login_bk" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:fontFamily="@font/jazera"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_title_text_siza"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_margen"
+        android:layout_marginTop="@dimen/login_card_margen_top"
+        android:layout_marginRight="@dimen/card_margen"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/card_raduies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:id="@+id/activity_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">>
+
+            <TextView
+                android:id="@+id/activity_register_tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <ImageView
+                android:id="@+id/profile_user_img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_userprofile" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/name_hint"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise">
+
+                <EditText
+                    android:id="@+id/activity_register_ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jazera"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/input_text_size" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/phone_hint"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise">
+
+                <EditText
+                    android:id="@+id/activity_register_ed_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jazera"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textSize="@dimen/input_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/email_hint"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise">
+
+                <EditText
+                    android:id="@+id/activity_register_ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:fontFamily="@font/jazera"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/input_text_size" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/password_hint"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/activity_register_ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:fontFamily="@font/jazera"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/input_text_size" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/activity_register_btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/buton_top_margen"
+                android:fontFamily="@font/jazera"
+                android:padding="@dimen/buton_padding"
+                android:text="@string/register"
+                android:textSize="@dimen/buton_text_size"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/buton_corner_reduis" />
+
+            <TextView
+                android:id="@+id/activity_register_tv_have_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:fontFamily="@font/jazera"
+                android:gravity="center"
+                android:text="@string/login_hint"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/login_text_size" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/RpbLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

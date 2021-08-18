@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:theme="@style/NoActionBar"
+    android:scrollbars="vertical"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margen"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_name_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/add_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jazera"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_description_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jazera"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_price_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/add_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:fontFamily="@font/jazera"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_item_category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                android:visibility="gone"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/add_item_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+
+                >
+                <Spinner
+                    android:id="@+id/item_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:autofillHints="category"
+                    android:layout_marginTop="@dimen/margin_top" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                >
+
+                <Spinner
+                    android:id="@+id/quantity_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:autofillHints="quantity"
+                    android:fontFamily="@font/jazera"
+                    android:entries="@array/quantity" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_item_quantity1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/add_item_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                >
+
+                <Spinner
+                    android:id="@+id/the_condition_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:autofillHints="quantity"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="@font/jazera"
+                    android:entries="@array/the_condition" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_item_the_condition1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details_et_item_category_hint"
+                app:errorTextColor="@color/colorAccent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner_reduise"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner_reduise"
+                android:layout_marginTop="@dimen/margin_top"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/add_item_the_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jazera"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <ImageView
+            android:id="@+id/add_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_260sdp"
+            android:src="@drawable/ic_baseline_add_photo_alternate"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:contentDescription="asdasdasd"
+            android:background="@color/colorPrimary"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
